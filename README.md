@@ -1,6 +1,6 @@
 # Num
 
-**Because floats were never really numbers**
+**Because floats were never really numbers.**
 
 ```elixir
 iex(1)> use Num.Rational
