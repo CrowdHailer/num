@@ -1,19 +1,14 @@
 # Num
 
-**TODO: Add description**
-
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `num` to your list of dependencies in `mix.exs`:
+**Because floats were never really numbers**
 
 ```elixir
-def deps do
-  [{:num, "~> 0.1.0"}]
-end
+iex(1)> use Num.Rational
+Num.Rational
+
+iex(2)> 2 / 4 == 1 / 2
+true
+
+iex(3)> (4 / (2 / 6))
+%Num.Rational{denominator: 1, numerator: 12}
 ```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/num](https://hexdocs.pm/num).
-
